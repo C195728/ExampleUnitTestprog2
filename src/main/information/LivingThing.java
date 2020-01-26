@@ -6,10 +6,6 @@ public class LivingThing {
     int attack;
     boolean dead;
 
-    //public int getHitPoint(){return hitPoint;}
-    //public int getAttack(){return attack;}
-    //public boolean getDead(){return dead;}
-
     public LivingThing(String name, int hitPoint, int attack) {
         this.name = name;
         this.hitPoint = hitPoint;
@@ -25,7 +21,6 @@ public class LivingThing {
     public String getName() {
         return name;
     }
-
     public void attack(LivingThing opponent){
         if(!dead) {
 
@@ -45,5 +40,4 @@ public class LivingThing {
     }
 
 }
-
 
