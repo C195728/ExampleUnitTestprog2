@@ -1,11 +1,17 @@
 package information;
 
 public class LivingThing {
-    String name;
-    int hitPoint;
-    int attack;
-    boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
 
+    public int getHitPoint(){
+        return hitPoint;
+    }
+    public int getAttack(){
+        return attack;
+    }
     public LivingThing(String name, int hitPoint, int attack) {
         this.name = name;
         this.hitPoint = hitPoint;
@@ -16,6 +22,9 @@ public class LivingThing {
 
     public boolean isDead() {
         return dead;
+    }
+    public  void setDead(boolean dead){
+        this.dead = dead;
     }
 
     public String getName() {
